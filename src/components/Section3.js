@@ -1,16 +1,19 @@
 import React from "react";
-import Navbar from "../components/Navbar.js";
+
 import card1 from "../components/images/card1.png";
 import card2 from "../components/images/card2.png";
 import card3 from "../components/images/card3.png";
 import card4 from "../components/images/card4.png";
 import card5 from "../components/images/card5.png";
 import { BsDiamond } from "react-icons/bs";
+const borderTextStyle = {
+  color: "transparent",
+  WebkitTextStroke: "1px white",
+};
 
 const Section3 = () => {
   return (
     <div className="container">
-      <Navbar />
       <div className="text-center text-white mt-[10%]">
         <h4 className="text-normal mb-3">Our Portfolio</h4>
         <h1 className="text-4xl font-semibold mb-6">
@@ -54,16 +57,22 @@ const Section3 = () => {
         </div>
         <div className="flex justify-center items-center space-x-4 mb-8">
           <div className="flex items-center">
-            <BsDiamond className="text-lg text-[#e1e0e5]" />
-            <span className="ml-2">Skilled Experts</span>
+            <BsDiamond className="text-lg " />
+            <span className="ml-2 text-2xl" style={borderTextStyle}>
+              Skilled Experts
+            </span>
           </div>
           <div className="flex items-center">
-            <BsDiamond className="text-lg text-[#e1e0e5]" />
-            <span className="ml-2">Creativity</span>
+            <BsDiamond className="text-lg " />
+            <span className="ml-2 text-2xl" style={borderTextStyle}>
+              Creativity
+            </span>
           </div>
           <div className="flex items-center">
-            <BsDiamond className="text-lg text-[#e1e0e5]" />
-            <span className="ml-2">Magical World</span>
+            <BsDiamond className="text-lg " />
+            <span className="ml-2 text-2xl" style={borderTextStyle}>
+              Magical World
+            </span>
           </div>
         </div>
       </div>
