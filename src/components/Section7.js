@@ -30,9 +30,9 @@ const FAQItem = ({ question, answer }) => {
 
 const Section7 = () => {
   return (
-    <div className="mx-auto px-[5%] lg:px-[%] ">
-      <div className="flex flex-col lg:flex-row justify-between text-white mt-[10%] lg:pace-x-20">
-        <div className="w-full lg:w-[50%] text-left mb-8 lg:mb-0">
+    <div className="mx-auto px-[12%] lg:px-[%] ">
+      <div className="flex flex-col lg:flex-row justify-between text-white mt-[10%] lg:space-x-10">
+        <div className="w-full lg:w-[60%] text-left mb-8 lg:mb-0">
           <h4 className="text-base mb-4">FAQs</h4>
           <h1 className="text-3xl font-semibold mb-4 capitalize">
             Frequently Asked Questions
@@ -61,7 +61,7 @@ const Section7 = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-[40%] flex justify-center items-center mt-8 lg:mt-0 mb-[10%]">
+        <div className="w-full lg:w-[38%] flex justify-center items-center mt-8 lg:mt-0 mb-[10%] pt-[5%]">
           <img src={faqImage} alt="FAQs" className="w-full h-auto" />
         </div>
       </div>

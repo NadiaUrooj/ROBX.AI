@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import serviceImage1 from "../components/images/Service1.png";
 import serviceImage2 from "../components/images/Service2.png";
 import serviceImage3 from "../components/images/Service3.png";
@@ -8,7 +9,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 const Section4 = () => {
   return (
-    <div className="py-16 bg-[#211b36] border-t-2 border-gray-600">
+    <div className="py-16 bg-[#211b36] border-t-2 border-gray-600 ">
       <div className="text-center mb-12 text-white">
         <h4 className="text-normal mb-3">Our Services</h4>
         <h2 className="text-4xl font-semibold mb-6">
@@ -20,7 +21,6 @@ const Section4 = () => {
           of our services
         </p>
       </div>
-
       <div className="flex flex-wrap justify-center md:space-y-0 space-y-20 gap-2 mb-12 text-white ">
         <div className="w-full sm:w-1/2 lg:w-1/5 text-center">
           <img
@@ -29,7 +29,7 @@ const Section4 = () => {
             className="w-full h-96 object-cover mb-4 rounded-lg"
           />
           <h3 className="text-xl font-semibold mb-2">Custom Development</h3>
-          <p className="text-sm p-1">
+          <p className="text-sm p-3">
             We specialize in creating bespoke AI solutions tailored to your
             specific business.
           </p>
@@ -42,7 +42,7 @@ const Section4 = () => {
             className="w-full h-96 object-cover mb-4 rounded-lg"
           />
           <h3 className="text-xl font-semibold mb-2">ML Solutions</h3>
-          <p className="text-sm p-1">
+          <p className="text-sm p-3">
             We specialize in creating bespoke AI solutions tailored to your
             specific business.
           </p>
@@ -54,7 +54,7 @@ const Section4 = () => {
             className="w-full h-96 object-cover mb-4 rounded-lg"
           />
           <h3 className="text-xl font-semibold mb-2">Data Analysis</h3>
-          <p className="text-sm p-1">
+          <p className="text-sm p-3">
             We specialize in creating bespoke AI solutions tailored to your
             specific business.
           </p>
@@ -66,18 +66,24 @@ const Section4 = () => {
             className="w-full h-96 object-cover mb-4 rounded-lg"
           />
           <h3 className="text-xl font-semibold mb-2">AI Services</h3>
-          <p className="text-sm p-1">
+          <p className="text-sm p-3">
             We specialize in creating bespoke AI solutions tailored to your
             specific business.
           </p>
         </div>
+      </div>{" "}
+      <div className="flex justify-center ">
+        {" "}
+        <button className="bg-[#7828d6] text-white px-6 py-2 rounded-full font-semibold button-hover">
+          Explore More
+        </button>
       </div>
-      <div className="flex flex-col lg:flex-row items-center mb-12 text-white mx-[10%] mt-[12%] md:space-x-10">
-        <div className="w-full lg:w-1/2  mb-8 lg:mb-0">
+      <div className="flex flex-col lg:flex-row items-center mb-12 text-white px-[10%] lg:pr-[10%] lg:pl-[12%] mt-[8%]">
+        <div className="w-full md:w-[50%] lg:w-[45%]  mb-8 lg:mb-0 mb-[10%]">
           <img
             src={whyChooseImage}
             alt="Why Choose Us"
-            className="w-96 rounded-lg"
+            className="w-96 rounded-lg transform scale-x-[-1]"
           />
         </div>
 
@@ -96,20 +102,20 @@ const Section4 = () => {
               AI Solutions
             </span>
           </h2>
-          <p className="text-sm mb-8">
+          <p className="text-sm mb-8 text-gray-300">
             Choose Robx.ai for leading-edge AI solutions and dedicated support.
             We specialize in customized AI development, ensuring transformative
             results tailored to your business needs and supported 24/7.
           </p>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-1">
             <div className="flex items-start">
               <IoIosArrowDroprightCircle className="text-[#7828d6] text-2xl mr-4" />
               <div>
                 <h5 className="font-semibold mb-1">
                   Customized AI Development:
                 </h5>
-                <p className="text-sm">
+                <p className="text-sm  text-gray-300">
                   Tailored solutions to meet your specific business challenges.
                 </p>
               </div>
@@ -118,7 +124,7 @@ const Section4 = () => {
               <IoIosArrowDroprightCircle className="text-[#7828d6] text-2xl mr-4" />
               <div>
                 <h5 className="font-semibold mb-1">Expert Team:</h5>
-                <p className="text-sm">
+                <p className="text-sm  text-gray-300">
                   Leaders in AI technology with a track record of innovation.
                 </p>
               </div>
@@ -127,14 +133,14 @@ const Section4 = () => {
               <IoIosArrowDroprightCircle className="text-[#7828d6] text-2xl mr-4" />
               <div>
                 <h5 className="font-semibold mb-1">24/7 Support:</h5>
-                <p className="text-sm">
+                <p className="text-sm  text-gray-300">
                   Dedicated assistance ensuring seamless integration and ongoing
                   success.
                 </p>
               </div>
             </div>
           </div>
-          <button className="mt-10 bg-[#7828d6] text-white px-8 py-2 rounded-full text-center font-semibold">
+          <button className="mt-10 bg-[#7828d6] text-white px-8 py-2 rounded-full text-center font-semibold button-hover">
             Contact Us
           </button>
         </div>

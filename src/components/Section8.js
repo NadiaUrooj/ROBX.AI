@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../App.css";
 import blogImage1 from "../components/images/Blog1.png";
 import blogImage2 from "../components/images/Blog2.png";
 import blogImage3 from "../components/images/Blog3.png";
@@ -18,7 +18,7 @@ const Section8 = () => {
           of our services
         </p>
         {/* Blog Cards */}{" "}
-        <div className="flex flex-wrap justify-center gap-6 mb-2 text-white">
+        <div className="flex flex-wrap justify-center gap-10 mb-2 text-white">
           <div className="w-full sm:w-1/2 lg:w-1/5 text-center">
             <img
               src={blogImage1}
@@ -42,7 +42,7 @@ const Section8 = () => {
             />
           </div>
         </div>
-        <button className="bg-[#7828d6] text-white px-6 py-2 rounded-full font-semibold">
+        <button className="bg-[#7828d6] text-white px-6 py-2 rounded-full font-semibold button-hover">
           Read More
         </button>
       </div>

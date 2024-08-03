@@ -4,7 +4,7 @@ import Logo from "../components/images/logo.png";
 
 const Section9 = () => {
   return (
-    <div className=" mx-auto px-[6%] border-y-2 border-gray-600 w-full">
+    <div className=" mx-auto px-[10%] border-y-2 border-gray-600 w-full">
       <div className="flex flex-col lg:flex-row items-center lg:space-x-[12%] mt-[10%]">
         <div className="lg:w-[50%] mt-[-18%] mb-8 lg:mb-0 relative">
           <img

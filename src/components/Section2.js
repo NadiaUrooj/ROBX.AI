@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import "../App.css";
 import image from "../components/images/Section2.png";
 
 const Section2 = () => {
   return (
     <div className="border-t-2 border-gray-600">
-      <Navbar />
-      <div className="flex flex-col lg:flex-row items-center mx-5 lg:items-start lg:ml-[8%] lg:mt-[6%] md:mx-[5%] lg:space-x-20">
-        <div className="w-full lg:w-1/2 text-white text-left p-8  lg:pr-[5%]">
-          <h4 className="text-normal mb-3">About Us</h4>
+      <div className="flex flex-col lg:flex-row items-center lg:items-start  lg:mt-[6%] lg:space-x-36 lg:px-[9%] px-[5%]">
+        <div className="w-full lg:w-[48%] text-white text-left p-8 ">
+          <h4 className="text-normal mb-3 uppercase">About Us</h4>
           <h2 className="text-4xl font-semibold mb-8 leading-relaxed">
             Delivering &nbsp;
             <span
@@ -70,7 +69,7 @@ const Section2 = () => {
             </div>
           </div>
 
-          <button className="bg-[#7828d6] text-white font-bold px-8 py-2 rounded-full">
+          <button className="bg-[#7828d6] text-white font-bold px-8 py-2 rounded-full button-hover">
             Read More
           </button>
         </div>

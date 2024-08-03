@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../components/images/logo.png";
 import { HiOutlineSearch } from "react-icons/hi";
-
+import "../App.css";
 const Navbar = () => {
   const gradientTextStyle = {
     background: "linear-gradient(to right, #c33bfe, #a443e3)",
@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <div className="container">
-      <nav className="fixed top-0 left-0 w-full z-10 h-18 bg-black bg-opacity-10 text-white font-normal border-b-2 border-gray-600 uppercase">
+      <nav className="fixed top-0 left-0 w-full z-10 h-18 bg-black bg-opacity-10 text-white font-normal border-b-2 border-gray-600 uppercase backdrop-blur-sm">
         <div className="container mx-auto px-[8%] py-[1%] flex justify-between items-center">
-          <div className="flex items-center pr-5 pt-2">
-            <img src={Logo} alt="Logo" className="h-8" />
+          <div className="flex items-center pr-5 pt-1">
+            <img src={Logo} alt="Logo" className="h-10" />
           </div>
 
           <div className="hidden lg:flex space-x-40 items-center">
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-1 relative ml-20">
               <HiOutlineSearch className="w-5 h-5 text-white" />
               <div className="h-[30px] w-[1px] bg-gray-300 mx-2"></div>
-              <button className="relative bg-[#7828d6] text-white px-6 py-2 rounded-full">
+              <button className="relative bg-[#7828d6] text-white px-6 py-2 rounded-full button-hover font-semibold">
                 Apply Now
               </button>
             </div>
@@ -70,10 +70,6 @@ const Navbar = () => {
               <li className="hover-custom">Contact</li>
 
               <div className="flex flex-col items-center space-y-2 mt-4">
-                <div className="flex items-center space-x-1">
-                  <HiOutlineSearch className="w-5 h-5 text-white" />
-                  <div className="h-[30px] w-[1px] bg-gray-300 mx-2"></div>
-                </div>
                 <button className="relative bg-[#542294] text-white px-6 py-1 rounded-full uppercase">
                   Apply Now
                 </button>

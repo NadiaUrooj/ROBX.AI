@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#211b36] text-gray-400 py-4 lg:pb-0 px-[7%]">
+    <footer className="bg-[#211b36] text-gray-400 py-4 lg:pb-0 px-[10%]">
       <div className="container flex flex-col items-center lg:flex-row lg:justify-between">
         <p className="text-sm mb-4 lg:mb-0  text-center lg:text-left">
           Copyright{" "}
