@@ -1,65 +1,47 @@
 import React from "react";
-import contactImage from "../components/images/Contact.png";
-import Logo from "../components/images/logo.png";
+import "../App.css";
+import { Link } from "react-router-dom";
 
 const Section9 = () => {
   return (
-    <div className=" mx-auto px-[10%] border-y-2 border-gray-600 w-full">
-      <div className="flex flex-col lg:flex-row items-center lg:space-x-[12%] mt-[10%]">
-        <div className="lg:w-[50%] mt-[-18%] mb-8 lg:mb-0 relative">
-          <img
-            src={contactImage}
-            alt="Contact Us"
-            className="w-full h-auto object-cover"
-          />
-        </div>
+    <div className=" bg-[#211b36] border-t-2 border-gray-600 ">
+      <div className="text-center text-white  md:px-0 pt-[6%] pb-[16%] lg:mt-[3%] mt-[6%] px-[12%] lg:px-[10%]  ">
+        <h4 className="text-sm md:text-base mb-3 ">Our Blog</h4>
+        <h1 className="md:text-4xl text-2xl font-semibold lg:mb-8 md:mb-8 mb-3 lg:leading-relaxed md:leading-relaxed leading-snug">
+          Latest News and Articles
+        </h1>
+        <p className="text-xs md:text-sm  mb-12 font-light lg:w-[43%] w-[70%] mx-auto tracking-wide ">
+          Each project highlights our expertise and the transformative impact of
+          our services
+        </p>
+        {/* Blog Cards */}{" "}
+        <div className="flex flex-wrap justify-center gap-6 mb-2 text-white">
+          <div className="w-full sm:w-1/2 lg:w-[31%] text-center">
+            <img
+              src="/images//Blog1.png"
+              alt="Service 1"
+              className="object-cover mb-4 "
+            />
+          </div>
 
-        <div className="lg:w-[35%] text-white text-left lg:mt-[-8%]">
-          <h1 className="text-2xl font-semibold mb-4">
-            Revolutionized the Potential <br /> of AI and Robotics with{" "}
-            <span
-              style={{
-                background: "linear-gradient(90deg, #d18cfe, #f569dd)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              ROBX
-            </span>
-          </h1>
-          <p className="text-xs mb-4 text-gray-400">
-            We make good AI engineers. They, in turn, make good AI solutions.
-          </p>
-          <button className="bg-[#7828d6] text-white px-8 py-2 rounded-full font-bold">
-            Contact Us
-          </button>
+          <div className="w-full sm:w-1/2 lg:w-[31%] text-center">
+            <img
+              src="/images//Blog2.png"
+              alt="Service 2"
+              className="object-cover mb-4 "
+            />
+          </div>
+          <div className="w-full sm:w-1/2 lg:w-[31%] text-center">
+            <img
+              src="/images//Blog3.png"
+              alt="Service 3"
+              className=" object-cover mb-2 "
+            />
+          </div>
         </div>
-      </div>
-
-      <div className="container mx-auto px-[2%] py-[5%] flex flex-col lg:flex-row justify-between items-center">
-        {/* Navigation Links */}
-        <div className="text-white mb-4 lg:mb-0">
-          <ul className="flex flex-wrap justify-center lg:justify-start space-x-6 lg:space-x-6 items-center">
-            <li className="hover-custom py-2">Home</li>
-            <li className="hover-custom py-2">About Us</li>
-            <li className="hover-custom py-2">Services</li>
-            <li className="hover-custom py-2">Blogs</li>
-            <li className="hover-custom py-2">Contact</li>
-          </ul>
-        </div>
-
-        {/* Logo Section */}
-        <div className="flex items-center mb-4 lg:mb-0">
-          <img src={Logo} alt="Logo" className="h-8" />
-        </div>
-
-        {/* Footer Links */}
-        <div className="text-white mb-4 lg:mb-0">
-          <ul className="flex flex-wrap justify-center lg:justify-end space-x-6 lg:space-x-6 items-center">
-            <li className="hover-custom py-2">Privacy & Policy</li>
-            <li className="hover-custom py-2">Terms & Conditions</li>
-          </ul>
-        </div>
+        <button className="bg-[#7828d6] text-white min-w-[12px] min-h-[40px] px-8 py-2 rounded-full md:text-normal  text-sm  font-semibold button-hover">
+          <Link to="blog"> Read More</Link>
+        </button>
       </div>
     </div>
   );

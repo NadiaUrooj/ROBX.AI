@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #0f062c;
   overflow-x: hidden;
 }
@@ -10,7 +10,6 @@ body {
 }
 .hover-custom {
   transition: color 0.3s ease, transform 0.3s ease;
-  
 }
 
 .hover-custom:hover {
@@ -20,12 +19,23 @@ body {
 }
 
 .border-text {
-  color: #0f062c; 
+  color: #0f062c;
   -webkit-text-stroke: 1px white;
-  text-stroke: 1px white; 
+  text-stroke: 1px white;
 }
 
 .button-hover:hover {
   background-color: #9a39e8;
   transition: background-color 0.3s ease;
+}
+.text-xxs {
+  font-size: 0.65rem;
+}
+.image-filter {
+  filter: grayscale(100%) sepia(20%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-filter:hover {
+  filter: none;
 }

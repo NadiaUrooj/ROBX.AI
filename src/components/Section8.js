@@ -1,50 +1,74 @@
-import React from "react";
-import "../App.css";
-import blogImage1 from "../components/images/Blog1.png";
-import blogImage2 from "../components/images/Blog2.png";
-import blogImage3 from "../components/images/Blog3.png";
+import React, { useState } from "react";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
+
+const FAQItem = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className="rounded-xl p-3 mb-4"
+      style={{ border: "1px solid #f569dd" }}
+    >
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex justify-between items-center text-left font-semibold focus:outline-none"
+      >
+        <span>{question}</span>
+        <IoIosArrowDropdownCircle
+          size={28}
+          className={`transform transition-transform duration-200 ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </button>
+      {isOpen && (
+        <>
+          <hr className="my-4 border-t-2" style={{ borderColor: "#7828d6" }} />
+          <p className="text-sm mt-4 font-light !text-white font-popin">
+            {answer}
+          </p>
+        </>
+      )}
+    </div>
+  );
+};
 
 const Section8 = () => {
   return (
-    <div className=" bg-[#211b36] border-t-2 border-gray-600 ">
-      <div className="text-center text-white px-4 lg:px-0 md:px-0 pt-[6%] pb-[20%]">
-        <h4 className="text-normal mb-3">Our Blog</h4>
-        <h1 className="text-4xl font-semibold mb-6 capitalize">
-          Latest Insights and Articles
-        </h1>
-        <p className="text-sm mb-8">
-          Each project highlights our expertise and the transformative impact{" "}
-          <br />
-          of our services
-        </p>
-        {/* Blog Cards */}{" "}
-        <div className="flex flex-wrap justify-center gap-10 mb-2 text-white">
-          <div className="w-full sm:w-1/2 lg:w-1/5 text-center">
-            <img
-              src={blogImage1}
-              alt="Service 1"
-              className="object-cover mb-4 "
+    <div className="mx-auto px-6 md:px-32 py-10 md:py-20">
+      <div className="flex flex-col lg:flex-row text-white gap-16">
+        <div className="w-full  lg:w-[68%] text-left mb-8 lg:mb-0">
+          <h4 className="text-base md:text-lg mb-3 font-popin">FAQs</h4>
+          <h1 className="md:text-4xl text-2xl font-semibold lg:mb-8 md:mb-8 mb-3 font-jamjuree ">
+            Frequently Asked Questions
+          </h1>
+          <div className="mt-8 text-sm font-popin">
+            <FAQItem
+              question="What types of AI solutions does ROBX.AI offer?"
+              answer="ROBX.AI offers a range of AI solutions, including natural language processing (NLP), machine learning (ML), computer vision, robotic process automation (RPA), speech recognition, and AI-powered analytics."
             />
-          </div>
-
-          <div className="w-full sm:w-1/2 lg:w-1/5 text-center">
-            <img
-              src={blogImage2}
-              alt="Service 2"
-              className="object-cover mb-4 "
+            <FAQItem
+              question="How can AI benefit my business?"
+              answer="AI can streamline operations, improve decision-making, enhance customer experiences, and provide predictive insights. Whether you're looking to automate repetitive tasks, personalize customer interactions, or gain deeper insights from data, AI can help achieve these goals."
             />
-          </div>
-          <div className="w-full sm:w-1/2 lg:w-1/5 text-center">
-            <img
-              src={blogImage3}
-              alt="Service 3"
-              className=" object-cover mb-2 "
+            <FAQItem
+              question="What industries does ROBX.AI serve?"
+              answer="ROBX.AI serves a variety of industries, including healthcare, retail, finance, manufacturing, and more. Our solutions are tailored to meet the unique needs and challenges of each sector."
+            />
+            <FAQItem
+              question="Do you offer custom AI solutions?"
+              answer="Yes, we specialize in creating custom AI solutions tailored to your business's specific needs. Our team works closely with you to understand your requirements and develop AI models and systems that align with your goals."
+            />
+            <FAQItem
+              question="How do I get started with implementing AI in my business?"
+              answer="Getting started with AI involves understanding your business needs and identifying the right AI solutions. You can reach out to our team for a consultation, where we'll discuss your objectives and how our AI services can help you achieve them. We guide you through the entire process, from planning to deployment and ongoing support."
             />
           </div>
         </div>
-        <button className="bg-[#7828d6] text-white px-6 py-2 rounded-full font-semibold button-hover">
-          Read More
-        </button>
+
+        <div className="hidden w-[40%] h-full mx-auto lg:flex justify-center items-center mt-10 ">
+          <img src="/images/FAQs.png" alt="FAQs" className="w-full h-auto" />
+        </div>
       </div>
     </div>
   );
